@@ -244,3 +244,62 @@ body {
 
     }
 }
+
+@media (min-width: 1000px) {
+
+    
+    .obsah {
+        width: 960px;
+        background-color: white;
+        margin: -40px auto;
+        box-shadow: 0px 6px 8px grey;
+        transform: translate(0, -1.2%);
+    }
+
+    .obsah h2::after {
+        content: "_______";
+        font-size: 30px;
+        display: block;
+        font-weight: bold;
+        color: blue;
+        font-family: sans-serif;
+        transform: translate(-3.3%, 0%);
+    }
+
+    /* U sekce Proc jet na Island netusim, proc mi ten pseudoprvek (modry pruh pod nadpisem) odskakuje od leveho okraje...? U Fotogalerie tomu tak neni*/
+
+    .menu {
+        float: left;
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+    }
+
+    .menu1 {
+        margin: 0px;
+    }
+
+    .menu li {
+        border: 0;
+        border-bottom: 1px solid grey;
+        text-align: left;
+    }
+
+    .foto {
+        width: 33.333%;
+        padding-bottom: 18%;
+    }
+
+    .uvod {
+        padding: 0px 30px 30px 350px;
+    }
+
+    .proc {
+        padding: 0px 350px 30px 30px;
+    }
+
+    .covidet, .zaver {
+        padding: 0px 30px 30px 350px;
+    }
+
+}
